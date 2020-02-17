@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizz Quiz!</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <!--my stylesheet--> 
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <!--Google Fonts-->
+   <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>  
+      
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <button id="highscoreBtn">High Score</button>
+          <p id="timer" class="time text-right"><strong></strong></p>
+        </div>
+      </div>
+        <div id = "startContainer" class="jumbotron text-center" style="background-color: #E5DA75; border-style: dashed; color: black;">
+            <div id="startMenu">
+              <h1 class="display-4"style="font-family: 'Bubblegum Sans', cursive;"><strong>Fizz Quiz!</strong></h1>
+            <p class="lead">Will you be a whiz? </p>
+            <hr class="my-4">
+            <p>Only time will tell...</p>
+            <p class="lead">
+              <a id = "startBtn" class="btn btn-primary btn-lg" href="#" role="button">START</a>
+            </p>
+            </div>
+            
+            <div id="questionContainer" class="text-align-center hide">
+              <div id="question"><h4>Question Here</h4></div>
+              <div id="choices">
+                <button class="answerBtn">A.</button>
+                <button class="answerBtn">B.</button>
+                <button class="answerBtn">C.</button>
+                <button class="answerBtn">D.</button>
+              </div>
+            </div>
+              
+            
+    </div>
+
+
+
+
+<!--Bootstrap JS-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+<!-- my js file-->
+<script src="script.js" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+</body>
+</html>
