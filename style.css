@@ -1,16 +1,48 @@
+#bg {
+    width: 100%;
+}
+
+#content {
+   position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.video-container {
+    position: absolute;
+}
+
+
 #timer {
     margin-top: 20px;
+    font-size: 30px;
+    text-decoration: bold;
+    font-family: 'Bubblegum Sans', cursive;
+    color: aliceblue;
+    text-shadow: black 2px 2px;
     
    
 }
 
+#startBtn {
+    background-color: #0da824;
+}
+
 #highscoreBtn {
+    font-size: 20px;
+    color: black;
+    background-color: #e8e20e;
+    border-radius: 5px;
     margin-top: 20px;
     float: left;
 }
 
 #startContainer {
     margin-top: 20px;
+    background-color: #223390;
+    border-style: dashed; color:#e8e20e;
 }
 
 .hide {
@@ -27,5 +59,7 @@
    display: block;
    padding: 20px;
    border: solid;
-   background-color: #17BEE5;
+   background-color: #774343;
+   color: white;
+   border-radius: 10px;
 }
