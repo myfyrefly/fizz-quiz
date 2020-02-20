@@ -59,9 +59,21 @@
   display: none;  
 }
 
+#question {
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 40px;
+}
+
 #choices {
-   margin: 20px 0 0 30px;
     
+   
+    
+}
+
+#answerChecked {
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 30px;
+    color: #ef59ef;
 }
 
 .answerBtn {
@@ -72,4 +84,9 @@
    background-color: #774343;
    color: white;
    border-radius: 10px;
+}
+
+#backStart {
+    background-color: #0da824;
+    border-radius: 10px;
 }
