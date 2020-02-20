@@ -4,10 +4,19 @@
 
 #content {
    position: relative;
-    display: flex;
+}
+
+#content2 {
+    position: relative;
     align-items: center;
-    justify-content: center;
-    z-index: 1;
+    background-color: #223390;
+  
+}
+
+.highScoreStyle {
+    font-family: 'Bubblegum Sans', cursive;
+    color: #e8e20e;
+    text-shadow: black 2px 2px;
 }
 
 .video-container {
@@ -20,7 +29,7 @@
     font-size: 30px;
     text-decoration: bold;
     font-family: 'Bubblegum Sans', cursive;
-    color: aliceblue;
+    color: #e8e20e;
     text-shadow: black 2px 2px;
     
    
@@ -29,6 +38,7 @@
 #startBtn {
     background-color: #0da824;
 }
+
 
 #highscoreBtn {
     font-size: 20px;

@@ -54,10 +54,11 @@ var op1 = document.getElementById("option1");
 var op2 = document.getElementById("option2");
 var op3 = document.getElementById("option3");
 var op4 = document.getElementById("option4");
-var timeLeft = 101;
+var timeLeft = 61;
 var graded = document.getElementById("answerChecked")
 var counter = 0
 var maxQuestions = 5;
+var initials = document.getElementById("initials");
 
 //eventlisteners go here 
 startBtn.addEventListener("click", startQuiz);
@@ -84,9 +85,8 @@ function checkAnswer(){
   }
   }
 
-  //when is the game finished?? have we passed questions.length??? 
 //we need to render our inits page with highscores and add to localStorage
-//nav to highscores or render highscores
+
 
 
 
@@ -114,7 +114,7 @@ function startQuiz() {
 
 function nextQuestion(){
     if (questions.length === 0 || counter >= maxQuestions){
-        return window.location.assign("index2.html");  
+              return window.location.assign("index2.html");  
       }
     
 var currentQuestion = questions[counter].q;
@@ -127,19 +127,7 @@ setTimeout(function(){
     graded.innerHTML = '' 
     // nextQuestion
   }, 300);
-  
-if(counter > questions.length){
-      
-    questionLine.innerHTML = currentQuestion;
-        op1.innerHTML = optionOne;
-      op2.innerHTML = optionTwo;
-      op3.innerHTML = optionThree;
-      op4.innerHTML = optionFour;
-      } else {
-        console.log("Game Over")
-        //render our initials page with button or anchor tag to take us to highscores.
-      }
-  
+
 questionLine.innerHTML = currentQuestion;
 op1.innerHTML = optionOne;
   op2.innerHTML = optionTwo;
@@ -147,8 +135,11 @@ op1.innerHTML = optionOne;
   op4.innerHTML = optionFour;
 }
 
-
+function saveHighScore(e) {
+  console.log('the submit button was clicked');
+  e.preventDefault();
+}
 
 function highscoreClick () {
-    console.log("This will take you to the high scores page");
+    $("#highscoreBtn").load("index2.html");
 }
