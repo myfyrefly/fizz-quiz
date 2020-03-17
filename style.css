@@ -64,8 +64,9 @@
     font-size: 40px;
 }
 
-#choices {
-    
+.btn-grid {
+    display: grid;  
+    grid-template-columns: repeat(2, auto);
    
     
 }
@@ -76,7 +77,8 @@
     color: #ef59ef;
 }
 
-.answerBtn {
+.btn {
+    font-size: 20px;
    margin: 10px;
    display: block;
    padding: 20px;
