@@ -52,7 +52,8 @@
 #startContainer {
     margin-top: 20px;
     background-color: #223390;
-    border-style: dashed; color:#e8e20e;
+    border-style: dashed; 
+    color:#e8e20e;
 }
 
 .hide {
